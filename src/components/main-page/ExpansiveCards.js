@@ -5,7 +5,7 @@ import nightsImgSrc from "../../img/bombayBottle3Resized.jpg";
 import eventsImgSrc from "../../img/salonLele3.jpg";
 import beerImgSrc from "../../img/redCanilla.jpg";
 import styles from "./ExpansiveCards.module.css";
-import NavBar from "../nav-bar/navBar";
+// import NavBar from "../nav-bar/navBar";
 
 function ExpansiveCards() {
   return (
