@@ -5,7 +5,9 @@ function KitchenPage() {
   return (
     <div>
       <SectionNavBar style={{ position: "sticky" }}></SectionNavBar>
-      <KitchenMainPage></KitchenMainPage>
+      <div>
+        <KitchenMainPage></KitchenMainPage>
+      </div>
     </div>
   );
 }
