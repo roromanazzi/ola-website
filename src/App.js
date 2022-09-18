@@ -6,7 +6,7 @@ import imgsrc from "./img/individualCopia.jpg";
 import { KitchenMainPage } from "./pages/kitchen-page/KitchenMainPage";
 import logoIg from "./img/instagram.png";
 import logoWp from "./img/whatsapp.png";
-import { InfoNavBar } from "./components/nav-bar/NavBar";
+import { InfoNavBar } from "./components/nav-bar/NavigationBar";
 import { LogoOla } from "./components/img-component/LogoOla";
 
 function App() {

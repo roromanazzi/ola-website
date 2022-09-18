@@ -1,6 +1,6 @@
 import styles from "./KitchenMainPage.module.css";
 import React from "react";
-import { SectionNavBar } from "../../components/nav-bar/NavBar";
+import { SectionNavBar } from "../../components/nav-bar/NavigationBar";
 
 export const KitchenMainPage = () => {
   return (
