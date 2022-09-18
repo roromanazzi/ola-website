@@ -35,6 +35,7 @@ export function NavBar({ links }) {
   );
 }
 
+// hola
 export function InfoNavBar() {
   return <NavBar links={navBarItems[1].links} />;
 }
