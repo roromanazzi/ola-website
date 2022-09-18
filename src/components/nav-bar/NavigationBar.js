@@ -1,4 +1,4 @@
-import styles from "./NavBar.module.css";
+import styles from "./NavigationBar.module.css";
 import { navBarItems } from "./NavBarItems";
 import { useNavigate, useLocation } from "react-router-dom";
 
