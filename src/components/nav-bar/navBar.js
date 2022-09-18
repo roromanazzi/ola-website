@@ -1,22 +1,44 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-// import styles from "./navBar.module.css";
+import styles from "./NavBar.module.css";
+import { navBarItems } from "./NavBarItems";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
-function NavBar() {
+function PageSelector(props) {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const isSelected = location.pathname === props.href;
+
+  const className = isSelected
+    ? `${styles.navBarLi} ${styles.navBarLiActive}`
+    : `${styles.navBarLi}`;
+
   return (
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Sobre nosotros</a>
-        </li>
-        <li>
-          <a href="#">Reservas</a>
-        </li>
-        <li>
-          <a href="#">Contacto</a>
-        </li>
+    <li className={className} onClick={() => navigate(props.href)}>
+      {props.children}
+    </li>
+  );
+}
+
+export function NavBar({ links }) {
+  return (
+    <nav className={styles.navBarContainer}>
+      <ul className={styles.navBarUl}>
+        {links.map((item) => {
+          return (
+            <PageSelector key={item.label} href={item.href}>
+              {item.label}
+            </PageSelector>
+          );
+        })}
       </ul>
     </nav>
   );
 }
 
-export default NavBar;
+export function InfoNavBar() {
+  return <NavBar links={navBarItems[1].links} />;
+}
+
+export function SectionNavBar() {
+  return <NavBar links={navBarItems[0].links} />;
+}

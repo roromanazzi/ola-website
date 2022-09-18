@@ -1,14 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&family=Josefin+Sans:wght@100;300;500;700&family=Montserrat:wght@100;300;500&family=Mr+Dafoe&family=Reem+Kufi+Fun&display=swap");
+
 .page {
   width: 100vw;
-  height: 100vh;
+  max-height: 100%;
   display: flex;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: 70%;
   justify-content: space-between;
-  /* align-items: ; */
 }
 
-img {
+.totalNav {
+  display: flex;
+  height: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.cardsImg {
   filter: contrast();
+}
+
+.container {
+  max-height: 100vh;
+}
+
+.mainPage {
+  position: relative;
+  width: 100vh;
+}
+
+.mainPageTitles {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 600px;
+  gap: 40px;
+  top: 25%;
+  left: 25%;
+}
+
+h3 {
+  all: unset;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  font-size: 1.1em;
+  line-height: 25px;
+  /* padding-left: 88px; */
+}
+
+.mainTitle {
+  all: unset;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  /* text-shadow: 0px 4.5px 3px rgba(0, 0, 0, 1); */
+  letter-spacing: 12px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.socialNetwork {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* padding-top: 20%; */
+  gap: 10px;
+  margin-left: 15px;
+  width: 5%;
+  justify-content: center;
+  align-items: center;
+  top: 45%;
+}
+
+.logoWp {
+  width: 100%;
+  height: 100%;
+  filter: invert(1) opacity(0.3);
+  -webkit-transition: 200ms;
+}
+.logoIg {
+  width: 85%;
+  height: 85%;
+  filter: invert(1) opacity(0.3);
+  -webkit-transition: 200ms;
+}
+
+.logoIg:hover,
+.logoWp:hover {
+  filter: invert(1) opacity(1);
+  transition: 200ms;
+  cursor: pointer;
 }

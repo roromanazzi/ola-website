@@ -5,75 +5,86 @@
   padding: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 
 body {
-  max-width: 100vw;
-  height: 100vh;
   background-color: #000;
-
-  /* display: grid; */
-  /* place-items: end; */
+  max-width: 100vh;
+  max-height: 100vh;
+  overflow-x: hidden;
 }
 
 .cardsContainer {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 35%;
+  position: relative;
 }
 
 .cardsComponentContainer {
+  gap: 0px;
   display: flex;
-  justify-content: flex-start;
-  width: max-content;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .container {
-  max-width: 100px;
-  height: 100%;
-  display: flex;
-  align-items: flex-start;
-  position: relative;
-  /* gap: 0px; */
-  justify-content: flex-start;
-}
-
-img {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cardsImg {
+  width: 100%;
+  height: 100vh;
   object-fit: cover;
-  -webkit-box-reflect: below 2px
-    linear-gradient(transparent, transparent, #0004);
   transform-origin: center;
-  transform: perspective(10000px) rotateY(25deg);
+  /* transform: perspective(800px) rotateY(25deg); */
   transition: 0.5s;
 }
 .container img:not(:focus) {
-  opacity: 0.3;
-  filter: grayscale(0.9);
+  opacity: 0.1;
+  filter: grayscale(0.8);
 }
 
+.container img:hover,
 .container:hover img {
-  opacity: 0.3;
+  opacity: 0.6;
+  filter: grayscale(0.5);
+  cursor: pointer;
+  box-shadow: 0px 10px 10px 6px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 10px 10px 6px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 10px 10px 6px rgba(0, 0, 0, 0.6);
+  image-resolution: 100%;
+  transform: scale(1.05, 1.05);
 }
 
-.container img:hover {
-  transform: perspective(800px) rotateY(0deg);
-  opacity: 1;
-  filter: grayscale(0);
-}
-
+.container:hover img ~ h2,
 .container img:hover ~ h2 {
-  opacity: 0;
-  transition: 0.4s;
+  opacity: 1;
+  transition: 0.5s;
+  cursor: pointer;
+  translate: 0px -40px;
 }
 
 .titles {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* gap: 20px; */
   position: absolute;
   flex-wrap: wrap;
   align-content: space-between;
@@ -84,12 +95,15 @@ h2 {
   color: white;
   rotate: -90deg;
   position: absolute;
-  bottom: 15%;
+  bottom: 10%;
   padding: 9px;
   width: 100%;
   text-align: left;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 100;
-  font-size: 3em;
+  text-emphasis-color: white;
+  font-size: 2em;
   text-shadow: 4.5px 0px 3px rgba(0, 0, 0, 1);
+  -webkit-transition: 0.5s;
+  /* transform: perspective(300px) rotateX(-25deg); */
 }
