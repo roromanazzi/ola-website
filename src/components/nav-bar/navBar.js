@@ -1,6 +1,6 @@
 import styles from "./NavBar.module.css";
 import { navBarItems } from "./NavBarItems";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function PageSelector(props) {
   const navigate = useNavigate();

@@ -30,6 +30,8 @@
   color: white;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
+  transition: 400ms;
+
   -webkit-transition: 400ms;
   font-size: 0.7em;
   text-transform: uppercase;

@@ -104,6 +104,8 @@ h2 {
   text-emphasis-color: white;
   font-size: 2em;
   text-shadow: 4.5px 0px 3px rgba(0, 0, 0, 1);
+  transition: 0.5s;
+
   -webkit-transition: 0.5s;
   /* transform: perspective(300px) rotateX(-25deg); */
 }
