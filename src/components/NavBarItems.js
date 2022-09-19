@@ -5,19 +5,19 @@ export const navBarItems = [
     links: [
       { label: "HOME", href: "/" },
       { label: "KITCHEN", href: "/kitchen" },
-      { label: "BAR", href: "#" },
-      { label: "NIGHTS", href: "#" },
-      { label: "EVENTS", href: "#" },
-      { label: "BORNEO", href: "#" },
+      { label: "BAR", href: "/bar" },
+      { label: "NIGHTS", href: "/nights" },
+      { label: "EVENTS", href: "/events" },
+      // { label: "BORNEO BREWING COMPANY", href: "#" },
     ],
   },
   {
     name: "infoSelector",
     id: "NV2",
     links: [
-      { label: "SOBRE NOSOTROS", href: "#" },
-      { label: "RESERVAS", href: "#" },
-      { label: "CONTACTANOS", href: "#" },
+      { label: "SOBRE NOSOTROS", href: "/sobre-nosotros" },
+      { label: "RESERVAS", href: "/reservas" },
+      { label: "CONTACTANOS", href: "/contacto" },
     ],
   },
 ];

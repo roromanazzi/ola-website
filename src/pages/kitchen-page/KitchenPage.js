@@ -1,4 +1,4 @@
-import { SectionNavBar } from "../../components/nav-bar/NavigationBar";
+import { SectionNavBar } from "../../components/NavigationBar";
 import { KitchenMainPage } from "./KitchenMainPage";
 
 function KitchenPage() {
