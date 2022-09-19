@@ -3,13 +3,13 @@ import ExpansiveCards from "./components/main-page/ExpansiveCards.js";
 import styles from "./components/main-page/ExpansiveCards.module.css";
 // import NavBar from "./components/nav-bar/NavBar";
 import imgsrc from "./img/individualCopia.jpg";
-import { KitchenMainPage } from "./pages/kitchen-page/KitchenMainPage";
+// import { KitchenMainPage } from "./pages/kitchen-page/KitchenMainPage";
 import logoIg from "./img/instagram.png";
 import logoWp from "./img/whatsapp.png";
 import { InfoNavBar } from "./components/NavigationBar";
 import { LogoOla } from "./components/img-component/LogoOla";
 // import { Link } from "react-router-dom";
-import { BarMainPage } from "./pages/bar-page/BarMainPage";
+// import { BarMainPage } from "./pages/bar-page/BarMainPage";
 
 function App() {
   return (

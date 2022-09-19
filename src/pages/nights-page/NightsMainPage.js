@@ -25,7 +25,7 @@ export const NightsMainPage = () => {
             );
           }}
         >
-          Ver la carta
+          Conocenos
         </button>
         <button className={styles.secondButton} id={styles.secondButton}>
           Actas de la muni

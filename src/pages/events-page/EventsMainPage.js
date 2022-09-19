@@ -25,7 +25,7 @@ export const EventsMainPage = () => {
             );
           }}
         >
-          Ver la carta
+          Reviví buenos momentos
         </button>
         <button className={styles.secondButton} id={styles.secondButton}>
           Galería de imágenes
