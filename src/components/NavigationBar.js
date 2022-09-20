@@ -35,11 +35,14 @@ export function NavBar({ links }) {
   );
 }
 
-// hola
 export function InfoNavBar() {
   return <NavBar links={navBarItems[1].links} />;
 }
 
 export function SectionNavBar() {
   return <NavBar links={navBarItems[0].links} />;
+}
+
+export function GoBackNavBar() {
+  return <NavBar links={navBarItems[2].links} />;
 }

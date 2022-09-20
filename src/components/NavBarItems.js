@@ -15,9 +15,15 @@ export const navBarItems = [
     name: "infoSelector",
     id: "NV2",
     links: [
-      { label: "SOBRE NOSOTROS", href: "/sobre-nosotros" },
+      // { label: "SOBRE NOSOTROS", href: "/sobre-nosotros" },
       { label: "RESERVAS", href: "/reservas" },
       { label: "CONTACTANOS", href: "/contacto" },
+      { label: "TRABAJA CON NOSOTROS", href: "/trabaja-con-nosotros" },
     ],
+  },
+  {
+    name: "subpageSelector",
+    id: "NV3",
+    links: [{ label: "Volver", href: "/bar" }],
   },
 ];

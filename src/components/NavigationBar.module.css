@@ -8,37 +8,36 @@
 }
 
 .navBarContainer {
-  display: flex;
   gap: 20px;
-  justify-content: flex-start;
-  /* align-items: ; */
-  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navBarUl {
-  margin-top: 6px;
-  color: white;
+  width: 100%;
+  height: fit-content;
   display: flex;
   justify-content: flex-start;
-  position: absolute;
-  width: 100%;
   align-items: center;
+  margin-top: 6px;
 }
 
 .navBarLi {
   all: unset;
-  padding: 12px 40px;
   color: white;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
+  font-size: 0.7em;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.5;
+  backdrop-filter: brightness(0.2) grayscale(0.3) blur(4px) opacity(0.9);
+  min-width: 96px;
+  padding: 12px 8px;
+  gap: 20px;
   transition: 400ms;
   -webkit-transition: 400ms;
-  font-size: 0.7em;
-  text-transform: uppercase;
-  gap: 20px;
-  backdrop-filter: brightness(0.2) grayscale(0.3) blur(4px) opacity(0.9);
-  opacity: 0.5;
-  width: fit-content;
 }
 
 .navBarLi:hover,
